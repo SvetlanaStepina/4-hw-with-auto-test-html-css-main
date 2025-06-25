@@ -210,43 +210,44 @@ footer {
 @media screen and (max-width: 1200px) {
     .main-section {
         /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */ 
-        display: flex;
-        min-height: auto;
-        padding: 0 20px;
+        min-height: fit-content;
+        padding-bottom: 20px;
     }
 
     .main-section .wrapper {
         /* 📍 Свойства для расположения элементов и отступа между ними */
+        display: flex;
         flex-direction: column-reverse;
-        flex-wrap: nowrap;
+        align-items: flex-start;
         gap: 20px;
     }
 
     .main-image {
         /* 📍 Максимальная ширина для главного изображения в % */
-        max-width: 100%;
-        margin-bottom: 60px;
+        max-width: 728px;
+        width: 100%;
     }
 
     .text-wrapper {
         /* 📍 Максимальная ширина для блока с текстом */
         max-width: 560px;
-        align-self: flex-start;
-        margin-bottom: 100px;
     }
 
     .about-section {
     /* 📍 Внутренний отступ сверху и снизу */
+        display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 20px;
+        padding: 60px 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .info-wrapper {
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
+        display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 0 20px;
     }
 }
 
